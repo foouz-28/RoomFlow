@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Login - RoomFlow</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="login">
+
+  <div class="login-wrapper">
+    <div class="login-box">
+      <div class="login-logo">
+        <img src="img/logo.svg" alt="RoomFlow" />
+        <span class="brand-text" style="font-size:1.3rem; font-weight:700;">Room<b style="color:var(--primary)">Flow</b></span>
+      </div>
+      <h2 data-i18n="admin_login_title">Staff Login</h2>
+      <p class="subtitle" data-i18n="admin_login_subtitle">Sign in to access the dashboard</p>
+
+      <div class="login-hint">
+        Admin: admin@studyroom.com / Admin12345<br>
+        Staff: staff@roomflow.com / Staff12345
+      </div>
+
+      <div id="alertBox" class="alert"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label data-i18n="label_email">Email</label>
+          <input type="email" id="email" class="form-control" value="admin@studyroom.com" required />
+        </div>
+        <div class="form-group">
+          <label data-i18n="label_password">Password</label>
+          <input type="password" id="password" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="login_btn">Login</button>
+      </form>
+
+      <p style="text-align:center; margin-top:18px;">
+        <button class="lang-btn" style="background:var(--muted);">العربية</button>
+      </p>
+      <p style="text-align:center; margin-top:14px;">
+        <a href="index.html" style="color:var(--primary);" data-i18n="back_to_site">Back to website</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

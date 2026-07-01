@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoomFlow - Study Room Booking</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== Navbar ===================== -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.svg" alt="RoomFlow logo" />
+        <span class="brand-text">Room<b>Flow</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="rooms.html" data-i18n="nav_rooms">Rooms</a></li>
+        <li><a href="booking.html" data-i18n="nav_booking">Book</a></li>
+        <li><a href="calendar.html" data-i18n="nav_calendar">Calendar</a></li>
+        <li><a href="my-bookings.html" data-i18n="nav_mybookings">My Bookings</a></li>
+        <li><a href="contact.html" data-i18n="nav_about">About</a></li>
+        <li><a href="admin-login.html" data-i18n="nav_admin">Staff Login</a></li>
+        <li><button class="lang-btn">العربية</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== Hero ===================== -->
+  <header class="hero">
+    <div class="container">
+      <h1 data-i18n="hero_title">Comfortable, Quiet Study Rooms</h1>
+      <p data-i18n="hero_subtitle">Bright, fully-equipped rooms with a calm atmosphere and a beautiful city view.</p>
+      <div class="btn-row">
+        <a href="rooms.html" class="btn btn-white" data-i18n="hero_btn_rooms">View Rooms</a>
+        <a href="booking.html" class="btn btn-outline" data-i18n="hero_btn_book">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== About / نبذة ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="home_about_title">About Us</h2>
+      </div>
+      <p style="max-width:820px; margin:0 auto; text-align:center; color:var(--muted); font-size:1.05rem;"
+         data-i18n="home_about_text">
+        RoomFlow offers premium study and meeting rooms designed for comfort and concentration.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== Why choose us (room qualities) ===================== -->
+  <section class="section" style="background:var(--lavender);">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="features_title">Why Choose RoomFlow</h2>
+        <p data-i18n="features_subtitle">A space built around your comfort</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="feature-card center">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M3 13a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4H3z"/><path d="M5 19v2M19 19v2"/></svg>
+          </div>
+          <h3 data-i18n="feature1_title">Comfort</h3>
+          <p data-i18n="feature1_text">Ergonomic chairs, spacious tables and a pleasant, modern setting.</p>
+        </div>
+        <div class="feature-card center">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </div>
+          <h3 data-i18n="feature2_title">Quiet &amp; Focus</h3>
+          <p data-i18n="feature2_text">Calm, private rooms that keep distractions out so you can concentrate.</p>
+        </div>
+        <div class="feature-card center">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+          </div>
+          <h3 data-i18n="feature3_title">Fully Equipped</h3>
+          <p data-i18n="feature3_text">Wi-Fi, whiteboards, screens and projectors with a great city view.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Rooms preview ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="home_rooms_title">Our Rooms</h2>
+        <p data-i18n="home_rooms_subtitle">Choose the room that fits your needs</p>
+      </div>
+      <div id="roomsContainer" class="grid grid-3"></div>
+    </div>
+  </section>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="img/logo.svg" alt="RoomFlow" /><span class="brand-text">Room<b>Flow</b></span></a>
+      <p data-i18n="footer_text">© 2026 RoomFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

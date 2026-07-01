@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar - RoomFlow</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.svg" alt="RoomFlow logo" />
+        <span class="brand-text">Room<b>Flow</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="rooms.html" data-i18n="nav_rooms">Rooms</a></li>
+        <li><a href="booking.html" data-i18n="nav_booking">Book</a></li>
+        <li><a href="calendar.html" data-i18n="nav_calendar">Calendar</a></li>
+        <li><a href="my-bookings.html" data-i18n="nav_mybookings">My Bookings</a></li>
+        <li><a href="contact.html" data-i18n="nav_about">About</a></li>
+        <li><a href="admin-login.html" data-i18n="nav_admin">Staff Login</a></li>
+        <li><button class="lang-btn">العربية</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="calendar_title">Availability Calendar</h2>
+        <p data-i18n="calendar_subtitle">See which rooms are booked or available on a date</p>
+      </div>
+
+      <div class="calendar-toolbar">
+        <div class="form-group" style="margin:0;">
+          <label data-i18n="label_date">Date</label>
+          <input type="date" id="calDate" class="form-control" />
+        </div>
+        <button id="showBtn" class="btn btn-primary" data-i18n="show_btn">Show</button>
+      </div>
+
+      <div id="calendarContainer"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="img/logo.svg" alt="RoomFlow" /><span class="brand-text">Room<b>Flow</b></span></a>
+      <p data-i18n="footer_text">© 2026 RoomFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/calendar.js"></script>
+</body>
+</html>

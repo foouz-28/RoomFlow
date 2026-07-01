@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book - RoomFlow</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.svg" alt="RoomFlow logo" />
+        <span class="brand-text">Room<b>Flow</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="rooms.html" data-i18n="nav_rooms">Rooms</a></li>
+        <li><a href="booking.html" data-i18n="nav_booking">Book</a></li>
+        <li><a href="calendar.html" data-i18n="nav_calendar">Calendar</a></li>
+        <li><a href="my-bookings.html" data-i18n="nav_mybookings">My Bookings</a></li>
+        <li><a href="contact.html" data-i18n="nav_about">About</a></li>
+        <li><a href="admin-login.html" data-i18n="nav_admin">Staff Login</a></li>
+        <li><button class="lang-btn">العربية</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="booking_title">Book a Study Room</h2>
+        <p data-i18n="booking_subtitle">Fill in the form to reserve your room</p>
+      </div>
+
+      <div class="form-card">
+        <div id="alertBox" class="alert"></div>
+
+        <!-- Suggestion box (filled by JS) -->
+        <div id="suggestBox" class="suggest-box" style="display:none;"></div>
+        <!-- Waiting-list offer (shown on conflict) -->
+        <div id="waitlistBox" class="suggest-box" style="display:none;"></div>
+        <!-- Booking result with QR (shown on success) -->
+        <div id="resultBox" style="display:none;"></div>
+
+        <form id="bookingForm" novalidate>
+          <div class="form-group">
+            <label data-i18n="label_name">Full Name</label>
+            <input type="text" id="customerName" class="form-control" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="label_phone">Phone Number</label>
+              <input type="text" id="phone" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label data-i18n="label_email">Email</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="label_date">Date</label>
+              <input type="date" id="date" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label data-i18n="label_people">Number of People</label>
+              <input type="number" id="numberOfPeople" class="form-control" min="1" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="label_start">Start Time</label>
+              <input type="time" id="startTime" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label data-i18n="label_end">End Time</label>
+              <input type="time" id="endTime" class="form-control" required />
+            </div>
+          </div>
+
+          <!-- Smart room suggestion -->
+          <div class="form-group">
+            <button type="button" id="suggestBtn" class="btn btn-ghost btn-block" data-i18n="suggest_btn">Suggest best room</button>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="label_room">Select Room</label>
+            <select id="roomId" class="form-control" required></select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="label_notes">Notes (optional)</label>
+            <textarea id="notes" class="form-control"></textarea>
+          </div>
+
+          <!-- Payment method (display only - not activated yet) -->
+          <div class="form-group">
+            <label data-i18n="label_payment">Payment Method</label>
+            <select id="paymentMethod" class="form-control">
+              <option value="Pay at venue" data-i18n="pay_venue">Pay at the venue</option>
+              <option value="KNET" data-i18n="pay_knet">KNET</option>
+              <option value="Card" data-i18n="pay_card">Credit / Debit Card</option>
+            </select>
+            <small style="color:var(--muted); display:block; margin-top:6px;" data-i18n="payment_note">Demo only — online payment is not activated yet.</small>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="submit_booking">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="img/logo.svg" alt="RoomFlow" /><span class="brand-text">Room<b>Flow</b></span></a>
+      <p data-i18n="footer_text">© 2026 RoomFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

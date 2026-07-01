@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Booking - RoomFlow</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="verify-wrapper">
+    <div class="verify-card">
+      <div class="login-logo">
+        <img src="img/logo.svg" alt="RoomFlow" />
+        <span class="brand-text" style="font-size:1.2rem; font-weight:700;">Room<b style="color:var(--primary)">Flow</b></span>
+      </div>
+      <h2 data-i18n="verify_title">Booking Verification</h2>
+      <p class="subtitle" style="color:var(--muted);" data-i18n="verify_subtitle">Scan a QR code or enter a booking reference</p>
+
+      <form id="verifyForm" class="mt-2">
+        <div class="form-group">
+          <label data-i18n="label_ref">Booking reference</label>
+          <input type="text" id="tokenInput" class="form-control" placeholder="XXXXXXXX" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="verify_btn">Verify</button>
+      </form>
+
+      <div id="verifyResult" class="mt-2"></div>
+
+      <p class="mt-2" style="text-align:center;">
+        <button class="lang-btn" style="background:var(--muted);">العربية</button>
+        <a href="index.html" style="color:var(--primary); margin-inline-start:10px;" data-i18n="back_to_site">Back to website</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/verify.js"></script>
+</body>
+</html>

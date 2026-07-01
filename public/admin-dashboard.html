@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - RoomFlow</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="dashboard">
+
+  <header class="admin-header">
+    <div class="container">
+      <a class="brand" href="admin-dashboard.html">
+        <img src="img/logo.svg" alt="RoomFlow" />
+        <span class="brand-text">Room<b>Flow</b></span>
+      </a>
+      <nav class="admin-nav">
+        <a href="admin-dashboard.html" class="active" data-i18n="dashboard">Dashboard</a>
+        <a href="manage-bookings.html" data-i18n="manage_bookings">Bookings</a>
+        <a href="waitlist.html" data-i18n="waiting_list">Waiting List</a>
+        <a href="manage-rooms.html" class="admin-only" data-i18n="manage_rooms">Rooms</a>
+        <a href="manage-accounts.html" class="admin-only" data-i18n="manage_accounts">Accounts</a>
+        <a href="verify.html" data-i18n="verify_nav">Verify QR</a>
+        <button class="lang-btn">العربية</button>
+        <a href="#" class="logout-btn" data-i18n="logout">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 class="mb-2" data-i18n="dashboard">Dashboard</h2>
+
+      <!-- Statistics -->
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-value" id="statTotalRooms">0</div><div class="stat-label" data-i18n="stat_total_rooms">Total Rooms</div></div>
+        <div class="stat-card"><div class="stat-value" id="statTotalBookings">0</div><div class="stat-label" data-i18n="stat_total_bookings">Total Bookings</div></div>
+        <div class="stat-card green"><div class="stat-value" id="statConfirmed">0</div><div class="stat-label" data-i18n="stat_confirmed">Confirmed</div></div>
+        <div class="stat-card red"><div class="stat-value" id="statCancelled">0</div><div class="stat-label" data-i18n="stat_cancelled">Cancelled</div></div>
+        <div class="stat-card orange"><div class="stat-value" id="statPending">0</div><div class="stat-label" data-i18n="stat_pending">Pending</div></div>
+        <div class="stat-card"><div class="stat-value" id="statWaiting">0</div><div class="stat-label" data-i18n="stat_waiting">Waiting List</div></div>
+      </div>
+
+      <!-- Charts -->
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3 data-i18n="chart_most_used">Most Used Rooms</h3>
+          <div id="chartMostUsed"></div>
+        </div>
+        <div class="chart-card">
+          <h3 data-i18n="chart_peak">Peak Hours</h3>
+          <div id="chartPeak"></div>
+        </div>
+      </div>
+      <div class="chart-card mb-2">
+        <h3 data-i18n="chart_monthly">Monthly Bookings</h3>
+        <div id="chartMonthly"></div>
+      </div>
+
+      <!-- Recent bookings -->
+      <h3 class="mb-2" data-i18n="recent_bookings">Recent Bookings</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="col_customer">Customer</th>
+              <th data-i18n="col_room">Room</th>
+              <th data-i18n="col_date">Date</th>
+              <th data-i18n="col_time">Time</th>
+              <th data-i18n="col_status">Status</th>
+            </tr>
+          </thead>
+          <tbody id="recentBookingsBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

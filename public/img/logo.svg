@@ -1,0 +1,16 @@
+<svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RoomFlow logo">
+  <defs>
+    <linearGradient id="rfGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#845BB3"/>
+      <stop offset="1" stop-color="#B98DE0"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded badge -->
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#rfGrad)"/>
+  <!-- Room outline (a door / room glyph) -->
+  <rect x="13" y="13" width="14" height="22" rx="2.5" fill="#FFFFFF" opacity="0.95"/>
+  <circle cx="23.5" cy="24" r="1.6" fill="#845BB3"/>
+  <!-- Flow arrow exiting the room -->
+  <path d="M27 24 H37" stroke="#E5EAF5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M33 19 L38 24 L33 29" stroke="#E5EAF5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

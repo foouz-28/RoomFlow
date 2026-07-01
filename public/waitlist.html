@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waiting List - RoomFlow Admin</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="waitlist">
+
+  <header class="admin-header">
+    <div class="container">
+      <a class="brand" href="admin-dashboard.html">
+        <img src="img/logo.svg" alt="RoomFlow" />
+        <span class="brand-text">Room<b>Flow</b></span>
+      </a>
+      <nav class="admin-nav">
+        <a href="admin-dashboard.html" data-i18n="dashboard">Dashboard</a>
+        <a href="manage-bookings.html" data-i18n="manage_bookings">Bookings</a>
+        <a href="waitlist.html" class="active" data-i18n="waiting_list">Waiting List</a>
+        <a href="manage-rooms.html" class="admin-only" data-i18n="manage_rooms">Rooms</a>
+        <a href="manage-accounts.html" class="admin-only" data-i18n="manage_accounts">Accounts</a>
+        <a href="verify.html" data-i18n="verify_nav">Verify QR</a>
+        <button class="lang-btn">العربية</button>
+        <a href="#" class="logout-btn" data-i18n="logout">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 class="mb-2" data-i18n="waitlist_title">Waiting List</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="col_customer">Customer</th>
+              <th data-i18n="col_contact">Contact</th>
+              <th data-i18n="col_room">Room</th>
+              <th data-i18n="col_requested">Requested Slot</th>
+              <th data-i18n="col_notified">Notified</th>
+              <th data-i18n="col_actions">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="waitlistTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

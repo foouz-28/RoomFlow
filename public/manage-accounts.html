@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accounts - RoomFlow Admin</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="manage-accounts">
+
+  <header class="admin-header">
+    <div class="container">
+      <a class="brand" href="admin-dashboard.html">
+        <img src="img/logo.svg" alt="RoomFlow" />
+        <span class="brand-text">Room<b>Flow</b></span>
+      </a>
+      <nav class="admin-nav">
+        <a href="admin-dashboard.html" data-i18n="dashboard">Dashboard</a>
+        <a href="manage-bookings.html" data-i18n="manage_bookings">Bookings</a>
+        <a href="waitlist.html" data-i18n="waiting_list">Waiting List</a>
+        <a href="manage-rooms.html" class="admin-only" data-i18n="manage_rooms">Rooms</a>
+        <a href="manage-accounts.html" class="active admin-only" data-i18n="manage_accounts">Accounts</a>
+        <a href="verify.html" data-i18n="verify_nav">Verify QR</a>
+        <button class="lang-btn">العربية</button>
+        <a href="#" class="logout-btn" data-i18n="logout">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 class="mb-2" data-i18n="accounts_title">Staff Accounts</h2>
+
+      <div class="grid grid-2">
+        <!-- Existing accounts -->
+        <div class="table-wrapper" style="align-self:start;">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="label_name">Name</th>
+                <th data-i18n="label_email">Email</th>
+                <th data-i18n="col_role">Role</th>
+                <th data-i18n="col_actions">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="accountsTableBody"></tbody>
+          </table>
+        </div>
+
+        <!-- Create account -->
+        <div class="form-card" style="margin:0;">
+          <h3 class="mb-2" data-i18n="add_account_title">Create New Account</h3>
+          <div class="alert alert-info show" data-i18n="create_admin_note">Only Admins can create accounts.</div>
+          <div id="alertBox" class="alert"></div>
+
+          <form id="createAccountForm">
+            <div class="form-group"><label data-i18n="label_name">Name</label><input type="text" id="newName" class="form-control" /></div>
+            <div class="form-group"><label data-i18n="label_email">Email</label><input type="email" id="newEmail" class="form-control" required /></div>
+            <div class="form-group"><label data-i18n="label_password">Password</label><input type="password" id="newPassword" class="form-control" minlength="6" required /></div>
+            <div class="form-group">
+              <label data-i18n="label_role">Role</label>
+              <select id="newRole" class="form-control">
+                <option value="Admin" data-i18n="role_admin">Admin</option>
+                <option value="Staff" data-i18n="role_staff">Staff</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" data-i18n="create_btn">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
