@@ -10,5 +10,10 @@
     "applyLanguage": "readonly",
     "toggleLanguage": "readonly",
     "roomName": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": ["error", {
+      "varsIgnorePattern": "^(editRoom|deleteRoom|changeStatus|deleteBooking|deleteWaitlist|deleteAccount|roomName|toggleLanguage)$"
+    }]
   }
 }
