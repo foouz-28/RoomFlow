@@ -7,6 +7,7 @@
 //   - Manage rooms / bookings / waiting list / accounts
 // ============================================================
 
+/* exported editRoom, deleteRoom, changeStatus, deleteBooking, deleteWaitlist, deleteAccount */
 const TOKEN_KEY = 'admin_token';
 const ROLE_KEY = 'admin_role';
 

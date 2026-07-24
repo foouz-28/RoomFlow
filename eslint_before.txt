@@ -1,0 +1,40 @@
+C:\Users\sondo\Desktop\StudyRoom\public\js\mybookings.js
+   8:3   error  'applyLanguage' is not defined   no-undef
+  14:85  error  'toggleLanguage' is not defined  no-undef
+  23:40  error  't' is not defined               no-undef
+  32:63  error  't' is not defined               no-undef
+  36:48  error  't' is not defined               no-undef
+  43:64  error  't' is not defined               no-undef
+  52:21  error  't' is not defined               no-undef
+  53:21  error  't' is not defined               no-undef
+  54:21  error  't' is not defined               no-undef
+  55:21  error  't' is not defined               no-undef
+  56:21  error  't' is not defined               no-undef
+  57:21  error  't' is not defined               no-undef
+  63:34  error  'roomName' is not defined        no-undef
+  76:63  error  't' is not defined               no-undef
+
+C:\Users\sondo\Desktop\StudyRoom\public\js\verify.js
+  10:3   error  'applyLanguage' is not defined   no-undef
+  11:85  error  'toggleLanguage' is not defined  no-undef
+  29:40  error  't' is not defined               no-undef
+  35:28  error  't' is not defined               no-undef
+  42:62  error  't' is not defined               no-undef
+  50:41  error  't' is not defined               no-undef
+  52:22  error  't' is not defined               no-undef
+  53:22  error  't' is not defined               no-undef
+  53:53  error  'getLang' is not defined         no-undef
+  54:22  error  't' is not defined               no-undef
+  55:22  error  't' is not defined               no-undef
+  56:22  error  't' is not defined               no-undef
+  57:22  error  't' is not defined               no-undef
+  58:22  error  't' is not defined               no-undef
+  58:70  error  't' is not defined               no-undef
+  58:88  error  't' is not defined               no-undef
+  61:90  error  't' is not defined               no-undef
+  68:60  error  't' is not defined               no-undef
+  79:16  error  't' is not defined               no-undef
+  81:11  error  't' is not defined               no-undef
+
+✖ 134 problems (134 errors, 0 warnings)
+

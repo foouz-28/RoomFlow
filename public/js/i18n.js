@@ -4,6 +4,7 @@
 //  (placeholder). applyLanguage() swaps text + page direction.
 // ============================================================
 
+/* exported t, applyLanguage, toggleLanguage, getLang, roomName */
 const translations = {
   // ---------- Brand / general ----------
   siteName: { en: 'RoomFlow', ar: 'RoomFlow' },

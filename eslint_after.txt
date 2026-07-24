@@ -1,0 +1,15 @@
+
+C:\Users\sondo\Desktop\StudyRoom\public\js\admin.js
+  226:10  error  'editRoom' is defined but never used        no-unused-vars
+  264:16  error  'deleteRoom' is defined but never used      no-unused-vars
+  301:16  error  'changeStatus' is defined but never used    no-unused-vars
+  305:16  error  'deleteBooking' is defined but never used   no-unused-vars
+  334:16  error  'deleteWaitlist' is defined but never used  no-unused-vars
+  380:16  error  'deleteAccount' is defined but never used   no-unused-vars
+
+C:\Users\sondo\Desktop\StudyRoom\public\js\i18n.js
+  237:10  error  'roomName' is defined but never used        no-unused-vars
+  265:10  error  'toggleLanguage' is defined but never used  no-unused-vars
+
+✖ 8 problems (8 errors, 0 warnings)
+
